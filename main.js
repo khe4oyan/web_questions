@@ -2,7 +2,7 @@ main();
 
 function main(){
   const question_box = document.createElement("div");
-
+  question_box.classList.add("container");
   for(let i = 0; i < question.length; ++i){
     const det = document.createElement("details");
     const summ = document.createElement("summary");

@@ -1,5 +1,6 @@
 const question = [
   // {quest: "", img: false, answer: false},
+  {quest: "Memory hierarchy", img: "memory_hierarchy", answer: false},
   {quest: "RVO", img: false, answer: "Return Value Optimization"},
   {quest: "section .txt", img: "section_txt", answer: false},
   {quest: "CLR", img: false, answer: "Common Language Runtime(общеязыковая исполняющая среда) C# Virtual Machine"},
