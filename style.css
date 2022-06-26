@@ -7,14 +7,13 @@
 body{
   min-height: 100vh;
   padding: 20px;
-  background-color: rgb(3, 5, 20);
+  background: linear-gradient(#DFC860, #6B5E27);
 }
 .container{
   max-width: 500px;
   margin: auto;
 }
 details{
-  color: white;
   text-align: center;
   background-color: rgba(255,255,255,.3);
   margin-bottom: 3px;
@@ -22,13 +21,14 @@ details{
 }
 details[open]{
   background-color: rgba(255,255,255,.8);
-  color: black;
 }
 details summary{
   padding: 10px;
 }
+details[open] summary{
+  border-bottom: 1px dashed #1c1704;
+}
 details p{
-  background-color: rgba(0,0,0,.1);
   padding: 10px;
   text-align: justify;
   margin-top: 10px;
