@@ -8,17 +8,17 @@ function main(){
     const summ = document.createElement("summary");
     const p = document.createElement("p");
     
-    if(question[i].img != false){
+    if(question[i].i != false){
       const img = new Image;
-      img.src = "img/" + question[i].img + ".png";
+      img.src = "img/" + question[i].i + ".png";
       det.appendChild(img);
     }
 
-    summ.textContent = question[i].quest;
+    summ.textContent = question[i].q;
     det.appendChild(summ);
     
-    if(question[i].answer != false){
-      p.innerHTML = question[i].answer;
+    if(question[i].a != false){
+      p.innerHTML = question[i].a;
       det.appendChild(p);
     }
 
