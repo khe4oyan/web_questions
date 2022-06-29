@@ -1,4 +1,11 @@
 *{
+  --base-color-1: #DFC860;
+  --base-color-2: #6B5E27;
+
+  --details-color-1: rgba(255,255,255,.3);
+  --details-color-2: rgb(1, 1, 1);
+  --details-open: rgba(247, 247, 247, 0.895);
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,7 +14,7 @@
 body{
   min-height: 100vh;
   padding: 20px;
-  background: linear-gradient(#DFC860, #6B5E27);
+  background: linear-gradient(var(--base-color-1), var(--base-color-2));
 }
 .container{
   max-width: 500px;
@@ -15,27 +22,36 @@ body{
 }
 details{
   text-align: center;
-  background-color: rgba(255,255,255,.3);
+  background-color: var(--details-color-1);
   margin-bottom: 3px;
   border-radius: 10px;
 }
-details[open]{
-  background-color: rgba(255,255,255,.8);
-}
 details summary{
   padding: 10px;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+details[open]{
+  background-color: var(--details-open);
+  color: var(--details-color-2);
 }
 details[open] summary{
-  border-bottom: 1px dashed #1c1704;
+  border-bottom: 2px dotted var(--details-color-2);
 }
 details p{
-  padding: 10px;
+  padding: 0px 0px 3px 10px;
   text-align: justify;
+}
+details p:first-of-type {
   margin-top: 10px;
+}
+details p:last-of-type {
+  padding-bottom: 10px;
 }
 details img{
   padding: 10px;
   margin-top: 10px;
   border-radius: 15px;
-  width: 100%;
+  max-width: 100%;
+  min-height: 30%;
 }
