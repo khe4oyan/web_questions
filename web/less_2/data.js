@@ -1,4 +1,19 @@
 const data = {
+  books: [ // n - name, l - link
+    {n: "Stevanovic, Advanced C and C++ Compiling ", l: "https://drive.google.com/file/d/1krV3tEoII7zd3026LUtS8WE7z0gbIrvv/view?usp=sharing"},
+    {n: "Bryant, O’Hallaron, Computer Systems", l:"https://drive.google.com/file/d/14E3r9mPQVthb33mq8xWXF--GZHpxuptY/view?usp=sharing"},
+    {n: "Silberschatz, Operating System Concepts", l:"https://drive.google.com/file/d/1MvxpHbRfBc-Ymt5DMHTlAMZntKpbUYvW/view?usp=sharing"},
+    {n: "R. Love, Linux System Programming", l:"https://drive.google.com/file/d/1KOn-1KE92C3tI-ZoG2FPjO5_fjahXCWV/view?usp=sharing"},
+    {n: "Joe Van Hoey, Beginning x64 Assembly Programming", l:"https://drive.google.com/file/d/1hu1Mw7kX-zcfrhxv2kbKflQcoCoQ2PBY/view?usp=sharing"},
+  ],
+  task:[
+    "Van Hoey, chapter 1 (10 pages)", 
+    "Stevanovic, chapters 1-3 (50 pages)", 
+    "Bryant, chapter 3.7 Procedures (17 pages)", 
+    "Bryant, chapter 7 Linking (50 pages) [skim over]", 
+    "Silberschatz, chapters 1-2 Intro to OS (50 pages out of 100) [quick read]", 
+    "R. Love, chapter 1 Introduction and Essential Concepts (25 pages)", 
+  ],
   question: [ // q - question, i - image, a - answer
     // {q: "", i: false, a: false},
     {q: "API", i: false, a: [

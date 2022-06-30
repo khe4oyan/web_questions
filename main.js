@@ -1,8 +1,50 @@
-main();
+const question_box = document.createElement("div");
+question_box.classList.add("container");
 
-function main(){
-  const question_box = document.createElement("div");
-  question_box.classList.add("container");
+create_books();
+create_task();
+create_questions();
+
+function create_books(){
+  let books = data.books;
+
+  const box = document.createElement('div');
+  const header_text = document.createElement('h2');
+  header_text.innerHTML = "Books (click in book name)";
+  box.appendChild(header_text);
+
+  box.classList.add('books__link');
+  for(let i = 0; i < books.length; ++i){
+    const a = document.createElement('a');
+    
+    a.innerText = books[i].n;
+    a.href = books[i].l;
+
+    box.appendChild(a);
+  }
+
+  question_box.appendChild(box);
+}
+
+function create_task(){
+  let task = data.task;
+  const box = document.createElement('div');
+  box.classList.add('task__list');
+
+  const header_text = document.createElement('h2');
+  header_text.innerHTML = "Task";
+  box.appendChild(header_text);
+
+  for(let i = 0; i < task.length; ++i){
+    const p = document.createElement('p');
+    p.innerText = task[i];
+    box.appendChild(p);
+  }
+
+  question_box.appendChild(box);
+}
+
+function create_questions(){
   for(let i = 0; i < data.question.length; ++i){
     const det = document.createElement("details");
     const summ = document.createElement("summary");

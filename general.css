@@ -55,3 +55,31 @@ details img{
   max-width: 100%;
   min-height: 30%;
 }
+
+.books__link, .task__list{
+  border: 1px solid white;
+  display: grid;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.books__link h2, .task__list h2{
+  border-bottom: 1px double white;
+}
+.books__link a, .task__list p{
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.task__list{
+  grid-gap: 0px;
+}
+.task__list p, .books__link a{
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.task__list p:nth-child(odd), .books__link a:nth-child(odd){
+  background-color: rgba(0, 0, 0, 0.16);
+}
