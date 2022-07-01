@@ -4,6 +4,7 @@ question_box.classList.add("container");
 create_books();
 create_task();
 create_questions();
+document.body.appendChild(question_box);
 
 function create_books(){
   let books = data.books;
@@ -19,7 +20,7 @@ function create_books(){
     
     a.innerText = books[i].n;
     a.href = books[i].l;
-
+    a.target = "_blank";
     box.appendChild(a);
   }
 
@@ -45,6 +46,14 @@ function create_task(){
 }
 
 function create_questions(){
+  if(data.question.length == 0 || data.question == false){
+    const empty_message = document.createElement("h2");
+    empty_message.classList.add("empty__message");
+    empty_message.innerText = "questions will be added later..";
+    question_box.appendChild(empty_message);
+    return;
+  }
+
   for(let i = 0; i < data.question.length; ++i){
     const det = document.createElement("details");
     const summ = document.createElement("summary");
@@ -83,6 +92,4 @@ function create_questions(){
 
     question_box.appendChild(det);
   }
-
-  document.body.appendChild(question_box);
 } 
