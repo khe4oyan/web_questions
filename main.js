@@ -32,7 +32,7 @@ function create_books(){
 }
 
 function create_task(){
-  if(data.tasks.length == 0 || data.tasks == false){
+  if(data.task.length == 0 || data.task == false){
     const empty_message = document.createElement("h2");
     empty_message.classList.add("empty__message");
     empty_message.innerText = "no tasks";

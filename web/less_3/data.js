@@ -1,6 +1,6 @@
 const data = {
   books: false,
-  tasks: false,
+  task: false,
   question: [
     {q: "Primitive Instruction", i: false, a: [
       "Примитивна инструкция",
