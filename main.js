@@ -35,7 +35,7 @@ function create_task(){
   if(data.tasks.length == 0 || data.tasks == false){
     const empty_message = document.createElement("h2");
     empty_message.classList.add("empty__message");
-    empty_message.innerText = "have not tasks";
+    empty_message.innerText = "no tasks";
     question_box.appendChild(empty_message);
     return;
   }
