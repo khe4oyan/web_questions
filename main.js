@@ -8,10 +8,6 @@ document.body.appendChild(question_box);
 
 function create_books(){
   if(data.books.length == 0 || data.books == false){
-    const empty_message = document.createElement("h2");
-    empty_message.classList.add("empty__message");
-    empty_message.innerText = "have not read books";
-    question_box.appendChild(empty_message);
     return;
   }
 
