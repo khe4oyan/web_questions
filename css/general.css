@@ -91,4 +91,5 @@ details img{
   background-color: var(--base-color-2);
   text-align: center;
   border-radius: 10px;
+  margin-bottom: 5px;
 }
