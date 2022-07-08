@@ -58,7 +58,7 @@ function create_task(){
 }
 
 function create_questions(){
-  if(data.question.length == 0 || data.question == false){
+  if(data.question == false || data.question.length == 0){
     const empty_message = document.createElement("h2");
     empty_message.classList.add("empty__message");
     empty_message.innerText = "questions will be added later..";
@@ -70,6 +70,10 @@ function create_questions(){
     const det = document.createElement("details");
     const summ = document.createElement("summary");
     
+    if(data.question[i].a == false || data.question[i].q == false){
+      continue;
+    }
+
     if(data.question[i].i != false){
       if(Array.isArray(data.question[i].i)){
         for(let k = 0; k < data.question[i].i.length(); ++k){
@@ -92,6 +96,9 @@ function create_questions(){
       if(Array.isArray(data.question[i].a)){
         for(let l = 0; l < data.question[i].a.length; ++l){
           const p = document.createElement("p");
+          if(data.question[i].a[l] == ""){
+            p.classList.add("new__line");
+          }
           p.innerText = data.question[i].a[l];
           det.appendChild(p);
         }
