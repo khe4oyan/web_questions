@@ -39,7 +39,7 @@ details[open] summary{
   border-bottom: 2px dotted var(--details-color-2);
 }
 details p{
-  padding: 0px 0px 10px 10px;
+  padding: 0px 0px 0px 10px;
   text-align: left;
 }
 details p:first-of-type {
@@ -66,13 +66,13 @@ details img{
 }
 .books__link h2, .task__list h2{
   border-bottom: 1px double white;
+  margin-bottom: 10px;
 }
 .books__link a, .task__list p{
   color: white;
   font-weight: 600;
   text-decoration: none;
 }
-
 .task__list{
   grid-gap: 0px;
 }
@@ -80,16 +80,18 @@ details img{
   padding: 10px 10px;
   border-radius: 5px;
 }
-.task__list p:nth-child(odd), .books__link a:nth-child(odd){
+.task__list p:nth-child(even), .books__link a:nth-child(even){
   background-color: rgba(0, 0, 0, 0.16);
 }
-
 .empty__message{
   padding: 20px;
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   color: var(--base-color-1);
   background-color: var(--base-color-2);
   text-align: center;
   border-radius: 10px;
   margin-bottom: 5px;
+}
+.new__line{
+  margin-bottom: 10px;
 }
