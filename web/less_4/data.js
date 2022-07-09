@@ -15,6 +15,6 @@ const data = {
     ]},
     {q: "Environment", i: false, a: "Код, написанный на JavaScript"},
     {q: "Cross-platform", i: false, a: "Работает на других платформах"},
-    {q: "Platfor = ? + ?", i: false, a: "CPU + OS"},
+    {q: "Platform = ? + ?", i: false, a: "CPU + OS"},
   ]  
 };

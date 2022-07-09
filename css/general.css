@@ -95,6 +95,6 @@ details img{
 .new__line{
   margin-bottom: 10px;
 }
-details summary::marker {
+details summary::marker, details summary::-webkit-details-marker{
   content: none;
 }

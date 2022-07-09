@@ -13,8 +13,9 @@ const data = {
     ]},
     {q: "Node js rule", i: false, a: [
       "Small surface area",
-      "taqcnel irakanacman dzevy",
-      "heshtacnel  useri ashxatanqy talov harmar gociqner",
+      "Скрывать детали реализации",
+      "",
+      "Облегчить работу юзера дав ему удобные инструменты"
     ]},
   ]  
 };
