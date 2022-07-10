@@ -6,11 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header.css">
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="apple-touch-icon" sizes="18x18" href="logo.png">
   <title>Web Tests</title>
 </head>
 <body>
-  <script src="showPages.js"></script>
+  <header class="container">
+    <a target="_blank" href="https://youtube.com/playlist?list=PLBzxnGCN6T8doz_ZtwauifMi_Ek6HMzs5">
+      Playlist
+    </a>
+
+    <img class="logo" src="yt.png" alt="YT">
+
+    <div class="last-open">Last Video</div>
+
+    <div class="last">
+      <div>
+        <iframe src="https://www.youtube.com/embed/R_Xh5oRyYPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button class="close">X</button>
+      </div>
+    </div>
+  </header>
+
+  <script src="js/showHeader.js"></script>
+  <script src="js/showPages.js"></script>
 </body>
 </html>
