@@ -61,7 +61,7 @@ function create_questions(){
   if(data.question == false || data.question.length == 0){
     const empty_message = document.createElement("h2");
     empty_message.classList.add("empty__message");
-    empty_message.innerText = "questions will be added later..";
+    empty_message.innerText = "no questions";
     question_box.appendChild(empty_message);
     return;
   }

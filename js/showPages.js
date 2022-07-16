@@ -7,6 +7,7 @@ const pages = [
   "Revisiting the basics",
   "Intro to Compilation and Program Execution",
   "", // skip 5 less
+  "Missed lesson"
 ];
 
 show_pages();

@@ -29,12 +29,12 @@ header .last-open{
 }
 .alterntiveLink{
   position: absolute;
-  bottom: -45px;
+  bottom: -35px;
   right: 0px;
+  font-size: 1rem;
   border-radius: 30px;
   padding: 7px 15px;
   background-color: rgb(171, 32, 32);
-
 }
 .last{
   position: absolute;
