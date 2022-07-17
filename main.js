@@ -4,6 +4,7 @@ question_box.classList.add("container");
 create_books();
 create_task();
 create_questions();
+
 document.body.appendChild(question_box);
 
 function create_books(){
@@ -61,7 +62,7 @@ function create_questions(){
   if(data.question == false || data.question.length == 0){
     const empty_message = document.createElement("h2");
     empty_message.classList.add("empty__message");
-    empty_message.innerText = "no questions";
+    empty_message.innerText = "no questions (maybe add later)";
     question_box.appendChild(empty_message);
     return;
   }
@@ -99,7 +100,7 @@ function create_questions(){
           if(data.question[i].a[l] == ""){
             p.classList.add("new__line");
           }
-          p.innerText = data.question[i].a[l];
+          p.innerHTML = data.question[i].a[l];
           det.appendChild(p);
         }
       }else{

@@ -55,7 +55,10 @@ details img{
   max-width: 100%;
   min-width: 30%;
 }
-
+details a{
+  font-weight: bolder;
+  color: rgb(245, 230, 116);
+}
 .books__link, .task__list{
   border: 1px solid white;
   display: grid;
