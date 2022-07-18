@@ -59,10 +59,10 @@ function create_task(){
 }
 
 function create_questions(){
-  if(data.question == false || data.question.length == 0){
+  if(data.question == false || data.question.length == 0 ){
     const empty_message = document.createElement("h2");
     empty_message.classList.add("empty__message");
-    empty_message.innerText = "no questions (maybe add later)";
+    empty_message.innerHTML = "no questions <br>(maybe add later)";
     question_box.appendChild(empty_message);
     return;
   }

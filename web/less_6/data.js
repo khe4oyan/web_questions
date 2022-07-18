@@ -6,12 +6,6 @@ const data = {
     "You Dont Know JS | Kyle Simpson (read all)"
   ],
   question: [
-    // {q: "", i: false, a: []},
-    // {q: "", i: false, a: []},
-    // {q: "", i: false, a: []},
-    // {q: "", i: false, a: []},
-    // {q: "", i: false, a: []},
-    // {q: "", i: false, a: []},
     {
       q: "Интерполяция", i: false, 
       a: [
