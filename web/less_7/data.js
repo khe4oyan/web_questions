@@ -6,6 +6,9 @@ const data = {
   task: false,
   question: [ 
     // q - question, i - image, a - answer
+    { q: "REST", i: false, a: [
+      "Representation State Transfer"
+    ]},
     { q: "Meta-data(мета-дата)", i: false, a: [
       "Мета дата несет в себе информацию о главной дате",
       "мета дата используеться в HTTP Document в Head",
